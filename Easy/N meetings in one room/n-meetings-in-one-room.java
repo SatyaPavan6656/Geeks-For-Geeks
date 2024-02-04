@@ -37,7 +37,7 @@ class Solution
 {
     //Function to find the maximum number of meetings that can
     //be performed in a meeting room.
-     static class Meetings{
+    static class Meetings{
         int start;
         int end;
         public Meetings(int start, int end){
@@ -45,11 +45,10 @@ class Solution
             this.end = end;
         }
     }
-
     public static int maxMeetings(int start[], int end[], int n)
     {
         // add your code here
-         Meetings[] meet = new Meetings[n];
+        Meetings[] meet = new Meetings[n];
         for(int i = 0;i<n;i++){
             meet[i] = new Meetings(start[i],end[i]);
         }
